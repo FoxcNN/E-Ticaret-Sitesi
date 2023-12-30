@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidar Tekstil</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- css dosyası -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar ">
+        <img class="logo " src="./img/logovidarkyu.png" alt="">
+        <ul class="menu">
+            <a class="active text-dark " href="./index.html">Ana Sayfa</a>
+            <a class="text-decoration-none text-dark" href="./Mağaza.html">Mağza</a>
+            <a class="text-decoration-none text-dark">İletişim</a>
+        </ul>
+        <ul class="menu-ıcon">
+            <a class="görseller" href="./account.html "><i class="bi bi-person-circle"></i></a>
+            <a class="görseller" ><i class="bi bi-cart" onclick="toggleModal()"></i></a>
+        </ul>
+    </nav>
+    <section class="slider">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/arkaplan1.jpg" class="d-block w-100" alt="...">
+                <div class="metin carousel-caption d-none d-md-block">
+                  <p class="fw-bold fs-1">Üyelik Oluştur</p>
+                  <p>Üst kısımda bulunan insan simgesine dokun ve sende hesap oluştır.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/arkaplan2.jpg" class="d-block w-100" alt="...">
+                <div class="metin carousel-caption d-none d-md-block">
+                  <p class="fw-bold fs-1">Mağzaya Tıkla</p>
+                  <p>Mağzaya Tıkla filitrele ve istediğin ürünü satın al</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/arkaplan3.jpg" class="d-block w-100" alt="...">
+                <div class="metin carousel-caption d-none d-md-block">
+                  <p class="fw-bold fs-1">Sepet ve Satın Alma</p>
+                  <p>Mağzadan beğendiğin ürünleri sepete ekle ve satın almak için hazır.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+        <!--! Card -->
+    <section class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="wsk-cp-product">
+            <div class="wsk-cp-img">
+              <img src="./img/Siyah Oversize pink büyük  Sweat.png" alt="Product" class="img-responsive" />
+            </div>
+            <div class="wsk-cp-text">
+              <div class="category">
+                <span>Detay</span>
+              </div>
+              <div class="title-product">
+                <h3>Siyah Oversize Pink Sweat</h3>
+              </div>
+              <div class="description-prod">
+                <p>Siyah Oversize Pink Sweat üç iplik kumaşı ile kaliteli bir deneyim</p>
+              </div>
+              <div class="card-footer">
+                <div class="wcf-left"><span class="price">210TL</span></div>
+                <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="wsk-cp-product">
+            <div class="wsk-cp-img"><img src="./img/Siyah Oversize Star Sweat _1.png" alt="Product" class="img-responsive" /></div>
+            <div class="wsk-cp-text">
+              <div class="category">
+                <span>Detay</span>
+              </div>
+              <div class="title-product">
+                <h3>Siyah Oversize Star Sweat</h3>
+              </div>
+              <div class="description-prod">
+                <p>Siyah Oversize Star Sweat üç iplik kumaşı ile kaliteli bir deneyim</p>
+              </div>
+              <div class="card-footer">
+                <div class="wcf-left"><span class="price">260TL</span></div>
+                <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="wsk-cp-product">
+            <div class="wsk-cp-img"><img src="./img/Siyah Oversize keçi Sweat.png" alt="Product" class="img-responsive" /></div>
+            <div class="wsk-cp-text">
+              <div class="category">
+                <span>Detay</span>
+              </div>
+              <div class="title-product">
+                <h3>Siyah Oversize keci Sweat</h3>
+              </div>
+              <div class="description-prod">
+                <p>Siyah Oversize keci Sweat üç iplik kumaşı ile kaliteli bir deneyim</p>
+              </div>
+              <div class="card-footer">
+                <div class="wcf-left"><span class="price">250TL</span></div>
+                <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="wsk-cp-product">
+            <div class="wsk-cp-img"><img src="./img/Siyah Oversize haç  Sweat.png" alt="Product" class="img-responsive" /></div>
+            <div class="wsk-cp-text">
+              <div class="category">
+                <span>Detay</span>
+              </div>
+              <div class="title-product">
+                <h3>Siyah Oversize haç  Sweat</h3>
+              </div>
+              <div class="description-prod">
+                <p>Siyah Oversize haç Sweat üç iplik kumaşı ile kaliteli bir deneyim</p>
+              </div>
+              <div class="card-footer">
+                <div class="wcf-left"><span class="price">290TL</span></div>
+                <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+    </section>
+<!--!sepet -->
+<div class="basket">
+  <div class="basket_items">
+    <i class="bi bi-x" onclick="toggleModal()"></i>
+  <h2 class="basket_sepet_baslik">Sepetim</h2>
+  <ul class="basket_list">
+    <li>
+      <img src="./img/Siyah Oversize pink büyük  Sweat.png" alt="" width="100" height="100">
+      <div class="basket_item_info fs-6">
+        <h3 class="black fw-bold fs-5">Siyah Sweat</h3>
+        <span class="basket_TL">210TL</span><br>
+        <span class="basket_Sil">Sil</span>
+      </div>
+      <div class="sweat_count">
+        <span class="azaltma">-</span>
+        <span class="">2</span>
+        <span class="çoğaltma">+</span>
+      </div>
+    </li>
+    <li>
+      <img src="./img/Siyah Oversize pink büyük  Sweat.png" alt="" width="100" height="100">
+      <div class="basket_item_info fs-6">
+        <h3 class="black fw-bold fs-5">Siyah Sweat</h3>
+        <span class="basket_TL">210TL</span><br>
+        <span class="basket_Sil">Sil</span>
+      </div>
+      <div class="sweat_count">
+        <span class="azaltma">-</span>
+        <span class="">2</span>
+        <span class="çoğaltma">+</span>
+      </div>
+    </li>
+    <li>
+      <img src="./img/Siyah Oversize pink büyük  Sweat.png" alt="" width="100" height="100">
+      <div class="basket_item_info fs-6">
+        <h3 class="black fw-bold fs-5">Siyah Sweat</h3>
+        <span class="basket_TL">210TL</span><br>
+        <span class="basket_Sil">Sil</span>
+      </div>
+      <div class="sweat_count">
+        <span class="azaltma">-</span>
+        <span class="">2</span>
+        <span class="çoğaltma">+</span>
+      </div>
+    </li>
+  </ul>
+  <div class="basket_sepet_toplam">
+    <span>Toplam : 210TL</span>
+    <button>Ödeme Sayfası</button>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+ 
+
+
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- js dsyası -->
+    <script src="./scrript.js"></script>
+</body>
+</html>
